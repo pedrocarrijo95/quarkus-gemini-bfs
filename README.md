@@ -8,7 +8,7 @@ It demonstrates how to combine classic algorithms with modern GenAI in a clean, 
 
 ## ✨ What It Does
 
-- Accepts a grid of `1`s and `0`s via a `POST /api/islandscount` endpoint
+- Accepts a grid of `1`s and `0`s via a `POST /api/ai/islandscount` endpoint
 - Allows specifying a **language code** (e.g., `"en"`, `"pt"`, `"es"`) in the request body
 - If no language is provided, it defaults to `"en"` (English)
 - Uses a **BFS algorithm** to count the number of distinct islands
@@ -66,7 +66,7 @@ http://localhost:8080 or 8081
 ```
 
 ```bash
-curl -X POST http://localhost:8080/api/islands-count \
+curl -X POST http://localhost:8080/api/ai/islands-count \
   -H "Content-Type: application/json" \
   -d '{
     "grid": [
