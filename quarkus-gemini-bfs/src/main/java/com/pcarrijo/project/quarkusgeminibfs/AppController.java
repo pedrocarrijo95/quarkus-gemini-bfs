@@ -27,6 +27,9 @@ public class AppController {
     public String islandscount(IslandRequest request) {
         char[][] grid = request.getGrid();
         String language = request.getLanguage();
+        if(language == null || language.isEmpty()){
+            language = "en";
+        }
         
         NumberOfIslandsBFS numberofislandsbfs = new NumberOfIslandsBFS();
         int islands_count = numberofislandsbfs.numIslands(grid);
