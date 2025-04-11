@@ -13,7 +13,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 
-@Path("/api")
+@Path("/api/ai")
 public class AppController {
 
     @Inject
