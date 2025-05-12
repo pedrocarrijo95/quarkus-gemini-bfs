@@ -1,8 +1,5 @@
 package com.pcarrijo.project.quarkusgeminibfs.service;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class NumberOfIslandsBFS {
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length == 0) return 0;
