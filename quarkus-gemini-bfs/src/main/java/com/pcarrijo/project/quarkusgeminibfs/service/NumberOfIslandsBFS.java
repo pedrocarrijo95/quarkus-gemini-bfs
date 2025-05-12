@@ -14,8 +14,6 @@ public class NumberOfIslandsBFS {
                 if (grid[i][j] == '1') {
                     count++;
                     callBFS(grid,i,j);
-                    
-                    
                 }
             }
         }
